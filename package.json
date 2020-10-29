@@ -1,0 +1,18 @@
+{
+  "name": "cypress-select-problem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web": "http-server -p 58000 html",
+    "cy:open": "cypress open",
+    "start": "start-server-and-test web http://localhost:58000 cy:open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.6.0",
+    "http-server": "^0.12.3",
+    "start-server-and-test": "^1.11.5"
+  }
+}
