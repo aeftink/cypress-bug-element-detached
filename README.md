@@ -1,6 +1,6 @@
-# element is detached from the DOM
+# Selecting an option from an auto-submitting select box causes "element is detached from the DOM"
 
-
+### Reproducing a [Cypress](http://cypress.io) bug: [#9032](https://github.com/cypress-io/cypress/issues/9032)
 
 I have a very simple page with a **select** box and a **text field**. The select box **submits** the page on every change.
 
@@ -34,4 +34,4 @@ This works in Firefox, and in Chrome version 80 (which I luckily still had on an
 
 Cypress version otoh doesn't really seem to matter, it happens in old versions as well as in current version.
 
-Here is a small repo which reproduces the problem. Simply run`npm start`.
+Here is a [small repo which reproduces the problem](https://github.com/marc-guenther/cypress-bug-element-detached). Simply run`npm start`.
