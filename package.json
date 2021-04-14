@@ -6,13 +6,16 @@
   "scripts": {
     "web": "http-server -p 58000 html",
     "cy:open": "cypress open",
-    "start": "start-server-and-test web http://localhost:58000 cy:open"
+    "playwright": "node ./playwright/test.js",
+    "start": "start-server-and-test web http://localhost:58000 cy:open",
+    "start:playwright": "start-server-and-test web http://localhost:58000 playwright"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.6.0",
     "http-server": "^0.12.3",
+    "playwright": "^1.10.0",
     "start-server-and-test": "^1.11.5"
   }
 }
